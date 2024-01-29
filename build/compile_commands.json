@@ -1,0 +1,26 @@
+[
+{
+  "directory": "C:/Users/masy/Desktop/model/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\model.dir\\project.cpp.obj -c C:\\Users\\masy\\Desktop\\model\\project.cpp",
+  "file": "C:/Users/masy/Desktop/model/project.cpp",
+  "output": "CMakeFiles/model.dir/project.cpp.obj"
+},
+{
+  "directory": "C:/Users/masy/Desktop/model/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\model.dir\\shader\\shader.cpp.obj -c C:\\Users\\masy\\Desktop\\model\\shader\\shader.cpp",
+  "file": "C:/Users/masy/Desktop/model/shader/shader.cpp",
+  "output": "CMakeFiles/model.dir/shader/shader.cpp.obj"
+},
+{
+  "directory": "C:/Users/masy/Desktop/model/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\model.dir\\model\\objload.cpp.obj -c C:\\Users\\masy\\Desktop\\model\\model\\objload.cpp",
+  "file": "C:/Users/masy/Desktop/model/model/objload.cpp",
+  "output": "CMakeFiles/model.dir/model/objload.cpp.obj"
+},
+{
+  "directory": "C:/Users/masy/Desktop/model/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\gcc.exe   -g -o CMakeFiles\\model.dir\\glad.c.obj -c C:\\Users\\masy\\Desktop\\model\\glad.c",
+  "file": "C:/Users/masy/Desktop/model/glad.c",
+  "output": "CMakeFiles/model.dir/glad.c.obj"
+}
+]

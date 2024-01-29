@@ -1,0 +1,20 @@
+#version 330 core
+
+layout(location = 0) in vec3 vertexPosition_modelspace;
+layout(location = 1) in vec2 vertexUV;
+layout(location = 2) in vec3 vertexNormal_modelspace;
+
+out vec2 UV;
+out vec3 vNormal;
+
+out vec3 vPos;
+uniform mat4 Model;
+uniform mat4 MVP; // Model-View-Projection matrix in row-major format
+
+void main(){  
+    gl_Position =  MVP * vec4(vertexPosition_modelspace,1);
+       UV = vec2(1.0 - vertexUV.x, vertexUV.y);
+    vPos = vec3(Model * vec4(vertexPosition_modelspace, 1)); // Transform to world space
+    // Transform the normal to the same space as the position
+    vNormal = vertexNormal_modelspace;
+}

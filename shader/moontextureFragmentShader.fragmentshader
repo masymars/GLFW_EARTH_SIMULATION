@@ -1,0 +1,25 @@
+#version 330 core
+
+in vec2 UV;
+in vec3 vNormal;
+in vec3 vPos; // World position of the fragment
+
+out vec4 FragColor;
+
+uniform sampler2D mytexture;  // Daytime texture
+
+uniform vec3 lightPos; // World position of the light
+uniform vec3 lightColor; // Color of the light
+
+void main() {
+    vec4 dayColor = texture(mytexture, UV);
+
+
+    vec3 normal = normalize(vNormal);
+    vec3 lightDir = normalize(lightPos - vPos); // Direction from vertex to light
+    float diff = max(dot(normal, lightPos), 0.3); // Diffuse reflection component
+
+    
+       FragColor = mix(dayColor, dayColor, diff);
+   
+}

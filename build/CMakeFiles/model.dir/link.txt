@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\model.dir/objects.a
+C:\msys64\ucrt64\bin\ar.exe qc CMakeFiles\model.dir/objects.a @CMakeFiles\model.dir\objects1.rsp
+C:\msys64\ucrt64\bin\g++.exe -g -Wl,--whole-archive CMakeFiles\model.dir/objects.a -Wl,--no-whole-archive -o model.exe -Wl,--out-implib,libmodel.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\model.dir\linkLibs.rsp
